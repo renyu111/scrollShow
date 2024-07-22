@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 200vh;
+      background: #000;
+    }
+
+    canvas {
+      position: fixed;
+      /* width: 500px; */
+      /* height: 500px; */
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="apple" width="500" height="281" />
+</body>
+
+<script>
+
+  const html = document.documentElement;
+  const canvas = document.getElementById("apple");
+  const context = canvas.getContext("2d");
+  const imgCount = 30; // 图片的总张数
+
+
+
+
+  // const currentImg = index => (
+  //   index < 10 // 这里注意拼接的编号 就在这里做处理了
+  //     ?
+  //     `https://www.apple.com.cn/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/000${index}.png`
+  //     :
+  //     `https://www.apple.com.cn/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/00${index}.png`
+  // )
+
+  const currentImg = index => (
+    `./img/${index}.jpg`
+  )
+
+
+
+  const preloadImg = () => {
+    for (let i = 1; i < imgCount; i++) {
+      const img = new Image();
+      img.src = currentImg(i);
+    }
+  };
+
+
+  const img = new Image()
+  img.src = currentImg(1);
+  // 画布的尺寸
+  canvas.width = 500;
+  canvas.height = 281;
+  // 渲染图片
+  img.onload = function () {
+    context.clearRect(0, 0, canvas.width, canvas.height) // 清除上次img的渲染
+    context.drawImage(img, 0, 0, canvas.width, canvas.height);
+  }
+
+
+
+  const updateImg = index => {
+    img.src = currentImg(index);
+    context.drawImage(img, 0, 0, canvas.width, canvas.height);
+  }
+
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.body.scrollTop;
+    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
+    const index = Math.min(
+      imgCount - 1,
+      Math.ceil(scrollFraction * imgCount)
+    );
+    console.log(index);
+    requestAnimationFrame(() => updateImg(index + 1))
+  });
+
+
+</script>
+
+</html>

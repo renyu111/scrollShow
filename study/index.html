@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>BokHuang</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="root" class="container">
+    <div class="jump-bar fade-text-blue">
+      》》》
+    </div>
+    <section id="head" class="title-box">
+      <h1 class="fade-text-blue top-title">你好,我是BOK</h1>
+      <div class="title-sticky-box jumps">
+        <div class="head-text-box fade-text-orange">
+          <p>一名前端工程师</p>
+          <p>慢慢下滑</p>
+          <p id="name-label"><span>来看看B</span><span id="name-text">O</span><span>K的故事</span></p>
+        </div>
+      </div>
+    </section>
+    <section id="head2" class="title-box">
+      <div style="height: 10rem"></div>
+      <div class="video-box">
+        <video id="head-video" preload="auto" loop src="head_animate2.MP4"></video>
+      </div>
+      <ul class="head-down-intro">
+        <li></li>
+        <li></li>
+        <li>我大概长这样</li>
+        <li>如果你想多欣赏下～</li>
+        <li>可以上下滑动</li>
+        <li>312321312</li>
+        <li>3123213</li>
+        <li>321312</li>
+        <li>只身来到深圳</li>
+        <li>12232323</li>
+        <li>123343</li>
+        <li>123455</li>
+      </ul>
+    </section>
+    <section id="intro" class="title-box">
+      <h1 class="fade-text-blue">demo demo22</h1>
+      <div class="fade-text-layer"></div>
+      <div class="fade-text-box">
+        <p class="fade-text-blue fade-text">
+          虽一直做前端，但也把前端外的技术摆弄了不少，或许正如我的性格，对一切都充满好奇心，总想去尝试看看。
+          例如这个页面，来自apple官网的灵感，实现掌控页面动画的感觉
+        </p>
+      </div>
+    </section>
+    <section id="tech" class="title-box">
+      <!--        <h1 class="fade-text-blue">demo demo33</h1>-->
+      <div class="sticky-box">
+        <div class="door-box">
+          <div id="door-l">关于</div>
+          <div id="door-r">技术</div>
+          <div class="child-box">
+            <div class="door-child" id="door-child1">
+              <img src="react.png" alt="">
+            </div>
+          </div>
+          <div class="child-box">
+            <div class="door-child" id="door-child2">
+              <img src="vue.png" alt="">
+            </div>
+          </div>
+          <div class="child-box">
+            <div class="door-child" id="door-child3">
+              <img src="../../assets/imgs/node.png" alt="">
+            </div>
+          </div>
+          <div class="child-box">
+            <div class="door-child" id="door-child4">
+              <img src="py.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="company" class="title-box">
+      <div class="float-text-box">
+        <div>
+          <h1 class="do-what">我的经历</h1>
+          <div id="bar1" class="scroll-bar">
+            <span class="fade-text-orange">跨端App</span>
+            &emsp;&emsp;&emsp;
+            <span class="fade-text-blue">微信/支付宝原生小程序</span>
+            &emsp;&emsp;
+            <span class="fade-text-orange">uniApp</span>
+            &emsp;&emsp;
+            <span class="fade-text-blue">php 服务端开发</span>
+            &emsp;&emsp;
+          </div>
+          <div id="bar2" class="scroll-bar">
+            <span class="fade-text-orange">远程调试CLI</span>
+            &emsp;&emsp;&emsp;
+            <span class="fade-text-orange">node中间件</span>
+            &emsp;&emsp;
+            <span class="fade-text-green">后台管理系统</span>
+            &emsp;&emsp;
+            <span class="fade-text-orange">移动端h5</span>
+            &emsp;&emsp;
+            <span class="fade-text-blue">py网页爬虫</span>
+          </div>
+          <div id="bar3" class="scroll-bar">
+            <span class="fade-text-green">在线交易平台</span>
+            &emsp;&emsp;&emsp;
+            <span class="fade-text-green">构建部署脚本</span>
+            &emsp;&emsp;&emsp;
+            <span class="fade-text-orange">web海报编辑器</span>
+            &emsp;&emsp;
+            <span class="fade-text-orange">vscode插件</span>
+          </div>
+          <div id="bar4" class="scroll-bar">
+            <span class="fade-text-blue">时而心比天高</span>
+            &emsp;
+            <span class="fade-text-blue">时而听天由命</span>
+            &emsp;
+            <span class="fade-text-blue">有时斗志昂扬</span>
+            &emsp;
+            <span class="fade-text-blue">有时摆烂躺平</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom">
+      <div class="bottom-box">
+        <h4>小说明</h4>
+        <p>都说每一个前端看到apple官网都会好奇</p>
+        <p>我也一样，所以很多效果灵感都来自于此</p>
+        <p>用滚动条控制动画的进程，可以随时打断、倒退的动画</p>
+        <p>让浏览者非常自然的参与了动画的执行</p>
+        <p>实现起来还是有很多细节，如动画分区执行、黏性布局</p>
+        <p>最有意思的是头像部分，滚动事件的触发并不平滑</p>
+        <p>简单的用滚动进度来控制视频进度会导致严重跳帧</p>
+        <p>但这里我没有采用常见的帧缓存方案转canvas实现</p>
+        <p>而是自己写了一个平滑转换函数来避免跳帧</p>
+        <p>保障视频稳定以30帧来渲染</p>
+        <p>全部实现均使用原生，无任何js、css类库引入</p>
+        <p>代码中包含大量注释，欢迎交流、学习</p>
+        <h4 class="bottom-text">还可以倒着滑回去哟～</h4>
+      </div>
+    </section>
+  </div>
+  <script src="./index.js">
+   
+  </script>
+</body>
+
+</html>

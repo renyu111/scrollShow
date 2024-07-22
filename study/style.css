@@ -1,0 +1,397 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+html {
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 2000px;
+  padding-bottom: 500px;
+  opacity: .7;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#head {
+  top: 1.5rem;
+  width: 90%;
+  height: 120rem;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  background-color: #000000;
+}
+
+#head2 {
+  top: 1.5rem;
+  width: 90%;
+  height: 300rem;
+  margin: -16rem auto 0 auto;
+  text-align: center;
+  background-color: #000000;
+  opacity: 0;
+}
+
+#intro {
+  width: 90%;
+  height: 120rem;
+  margin: 10rem auto 0 auto;
+  text-align: center;
+  background-color: #000000;
+  position: relative;
+}
+
+#tech {
+  width: 90%;
+  height: 180rem;
+  margin: 0 auto;
+  text-align: center;
+  /*background-color: #362c3a;*/
+}
+
+#company {
+  width: 90%;
+  height: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  /*background-color: #38322c;*/
+  padding-top: 8rem;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.fade-text-blue {
+  text-align: left;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 30% 20%, 80% 80%, from(#f37008), to(#9b14b5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head-down-intro li {
+  padding: 10rem 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.fade-text-orange {
+  /*text-align: left;*/
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 30% 20%, 80% 80%, from(#08cbf3), to(#44ff00));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fade-text-green {
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 30% 20%, 80% 80%, from(#7208f3), to(#38ecc2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text2 {
+  margin: 60px auto;
+  text-align: center;
+  font-weight: bold;
+  /*background: url(https://www.apple.com/v/iphone-xs/a/images/overview/copy_texture_1_medium.jpg) repeat center center;*/
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head-text-box {
+  /*text-align: left;*/
+  /*display: flex;*/
+  flex-direction: column;
+  width: 100%;
+  height: 17rem;
+}
+
+.head-text-box p {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#name-label {
+  display: inline;
+  /*align-items: center;*/
+}
+
+.float-text-box {
+  width: 100%;
+  height: auto;
+  /*background-color: #672a2a;*/
+  margin: 0 auto;
+  white-space: nowrap;
+  padding-top: 3rem;
+  position: sticky;
+  top: 0;
+}
+
+.scroll-bar {
+  overflow: scroll;
+  line-height: 2;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.fade-text-box {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 1rem;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-text {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 1rem;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  font-size: 1.4rem;
+}
+
+.fade-text-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-image: linear-gradient(180deg, rgb(0 0 0), rgb(16 16 16 / 84%), rgb(255 255 255 / 0%), rgb(0 0 0 / 11%), rgb(0 0 0 / 80%), black)
+}
+
+.sticky-box {
+  width: 100%;
+  height: 12rem;
+  position: sticky;
+  top: 8rem;
+  /*margin-bottom: 5rem;*/
+  /*background-color: rgba(98, 154, 133, 0.45);*/
+}
+
+.door-box {
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+#door-l {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#door-r {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.child-box {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  right: 15%;
+  /*background-color: rgba(170, 201, 196, 0.9);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.door-child {
+  width: 20%;
+  height: 20%;
+  font-size: 10%;
+  opacity: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .3rem;
+}
+
+.door-child img {
+  width: 100%;
+  height: auto;
+}
+
+#door-child1 {
+  z-index: 4;
+}
+
+#door-child2 {
+  z-index: 3;
+}
+
+#door-child3 {
+  z-index: 2;
+}
+
+#door-child4 {
+  z-index: 1;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#head-video {
+  width: 3rem;
+  height: 3rem;
+  opacity: 1;
+  margin-top: 7rem;
+}
+
+.top-title {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.video-box {
+  width: 100%;
+  height: 400px;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3rem 3rem #000000;
+}
+
+.do-what {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.title-sticky-box {
+  width: 100%;
+  height: 400px;
+  background-color: #000000;
+  position: sticky;
+  top: 2rem;
+}
+
+.jump-bar {
+  height: 50px;
+  width: 120px;
+  background-color: rgb(92 0 255 / 51%);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 16px;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -60px;
+  transform: rotate(90deg);
+  transition: all 1s;
+  animation: jump .5s ease-in-out infinite alternate;
+  z-index: 999;
+}
+
+@keyframes jump {
+  from {
+    bottom: 100px;
+  }
+
+  to {
+    bottom: 120px
+  }
+}
+
+#bottom {
+  min-height: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom-box {
+  position: sticky;
+  top: 3rem;
+  padding: 0 0.2rem;
+  text-align: center;
+}
+
+.bottom-box h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.bottom-box p {
+  text-align: left;
+  display: inline-block;
+  font-size: 0.6rem;
+  color: #c5c5c5;
+  padding: 0 0.3rem;
+  /*line-height: 1.5;*/
+  margin: 0;
+}
+
+.bottom-text {
+  text-align: center;
+  padding-top: 5rem;
+  color: #888888;
+}
